@@ -1,0 +1,32 @@
+.cv-container {
+  display: flex;
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.preview-container {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-left: 20px; /* Add margin to separate form and preview */
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+  }
+  .preview-container {
+    margin-left: 0;
+    margin-top: 20px; /* Add margin to separate form and preview on smaller screens */
+  }
+}
